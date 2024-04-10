@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import axios from "axios";
 
 function Booking() {
-  const base = "http://localhost:8080/api/booking";
+  const base = "https://bookmyshow-q5p6.onrender.com";
   const [bookingDetails, setBookingDetails] = useState(null);
 
   const getBookings = async () => {

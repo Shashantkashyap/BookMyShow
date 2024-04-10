@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 // Login component for user authentication
 function Login() {
   
-  const base = "http://localhost:8080/api/booking";
+  const base = "https://bookmyshow-q5p6.onrender.com";
   const navigate = useNavigate();
   const [data, setData] = useState({
     email:"",

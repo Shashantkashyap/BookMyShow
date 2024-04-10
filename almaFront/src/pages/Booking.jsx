@@ -7,7 +7,7 @@ import axios from "axios";
 
 function Booking() {
   const navigate = useNavigate();
-  const base = "http://localhost:8080/api/booking";
+  const base = "https://bookmyshow-q5p6.onrender.com";
 
   const movieName = useSelector((state) => state.movie.movieName); // Accessing movieName state from Redux store
 
