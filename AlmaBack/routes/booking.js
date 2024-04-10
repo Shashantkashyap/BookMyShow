@@ -9,8 +9,8 @@ const { signUp, login, otpSend } = require("../controller/UserAuth");
 
 // Routes for booking related operations
 
-router.post("/", bookMovie); // Route to book a movie
-router.get("/", getLastBooking); // Route to get the last booking
+router.post("/booking", bookMovie); // Route to book a movie
+router.get("/booking", getLastBooking); // Route to get the last booking
 
 
 // Routes for user authentication

@@ -34,7 +34,7 @@ app.get("/", (req, res) => {
 });
 
 // Route for booking operations
-app.use("/api/booking", bookingRoute);
+app.use("/api", bookingRoute);
 
 // Start the server
 app.listen(Port, () => {

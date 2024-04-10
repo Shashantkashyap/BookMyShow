@@ -8,7 +8,7 @@ import {useNavigate} from "react-router-dom"
 // Signup component for user registration
 function Signup() {
   const navigate = useNavigate()
-  const base = "https://bookmyshow-q5p6.onrender.com";
+  const base = "https://bookmyshow-q5p6.onrender.com/api";
   const [data, setData] = useState({
     phone: "",
     name: "",
