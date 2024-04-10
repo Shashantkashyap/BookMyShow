@@ -1,8 +1,10 @@
 import React from "react";
 import logo from "../assets/logo.png";
+import {useNavigate} from "react-router-dom"
 
 // Footer component for displaying footer content
 function Footer() {
+  const navigate = useNavigate()
   return (
     <div className="w-[100%]">
       {/* Divider and logo */}
@@ -14,7 +16,7 @@ function Footer() {
 
       {/* Social media icons */}
       <div className="flex items-center justify-center gap-3 mt-10">
-        <div>
+        <div onClick={()=>navigate("https://www.facebook.com/shashant.kashyap/")}>
           {/* Facebook icon */}
           <img
             src="https://img.freepik.com/free-psd/facebook-logo-3d-social-media-icon-isolated_47987-11965.jpg"
@@ -22,7 +24,7 @@ function Footer() {
             className="w-12 h-12 rounded-full hover:scale-[1.05] transition duration-200 "
           />
         </div>
-        <div>
+        <div onClick={()=>navigate("https://twitter.com/KashyapShashant")}>
           {/* Twitter icon */}
           <img
             src="https://www.shutterstock.com/shutterstock/photos/2339132689/display_1500/stock-vector-high-resolution-twitter-x-app-logo-icon-png-download-isolated-on-transparent-background-vector-2339132689.jpg"
@@ -30,7 +32,7 @@ function Footer() {
             className="w-12 h-12 rounded-full hover:scale-[1.05] transition duration-200"
           />
         </div>
-        <div>
+        <div onClick={()=>navigate("https://www.instagram.com/kashyapshashant/")}>
           {/* Instagram icon */}
           <img
             src="https://img.freepik.com/free-psd/3d-icon-social-media-app_23-2150049581.jpg?size=338&ext=jpg&ga=GA1.1.1700460183.1712188800&semt=ais"
@@ -38,7 +40,7 @@ function Footer() {
             className="w-12 h-12 rounded-full hover:scale-[1.05] transition duration-200"
           />
         </div>
-        <div>
+        <div onClick={()=>navigate("https://www.linkedin.com/in/shashant-kashyap-b812a0155/")}>
           {/* LinkedIn icon */}
           <img
             src="https://www.freepnglogos.com/uploads/linkedin-logo-hd-png-3.png"
