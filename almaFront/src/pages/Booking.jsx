@@ -68,7 +68,7 @@ function Booking() {
   // Function to handle booking submission
   const handleBooking = async () => {
     try {
-      const res = await axios.post(`${base}/`, bookingDetails);
+      const res = await axios.post(`${base}/booking`, bookingDetails);
       console.log(res);
       setShowConfirmation(true); // Show confirmation overlay after successful booking
       setBookingDetails({

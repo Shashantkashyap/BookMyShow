@@ -9,7 +9,7 @@ function Booking() {
 
   const getBookings = async () => {
     try {
-      const response = await axios.get(base);
+      const response = await axios.get(`${base}/booking`);
       if (response.data && response.data.lastBooking) {
         const lastBooking = response.data.lastBooking;
         setBookingDetails(lastBooking);
