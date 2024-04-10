@@ -22,7 +22,7 @@ dbConnect();
 // Middleware
 app.use(express.json()); // Parse JSON bodies
 app.use(cors({ // Enable CORS
-    origin: "http://localhost:5173" // Allow requests from this origin
+    origin: "https://bookmyshow-front.onrender.com" // Allow requests from this origin
 }));
 
 // Test route
