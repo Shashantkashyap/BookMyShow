@@ -1,0 +1,15 @@
+{
+  "name": "bookmyshow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install-server": "cd AlmaBack && npm install",
+    "start-server": "cd AlmaBack && node server.js",
+    "install-client": "cd almaFront && npm install",
+    "build-client": "cd almaFront && npm run build",
+    "start-client": "cd almaFront && npm run dev"
+  },
+  "author": "",
+  "license": "ISC"
+}
